@@ -1,0 +1,34 @@
+\begin{frame}{Triangle construction}
+\begin{enumerate}
+\conti
+\item In $\triangle{ABC}$ ,a=8,$\angle{B}=45\degree$ and c-b=3.5. Sketch $\triangle{ABC}$
+\seti
+\end{enumerate}
+\textbf{Solution:}
+\begin{figure}[!ht]
+\resizebox{1\linewidth}{!}
+{
+\input{./figs/triangle/2.triangle_construction_fig}
+\includegraphics[scale=0.4]{./figs/triangle/constr.png}
+}
+\caption{Triangle with tikz and python }
+\label{fig:foo}
+\end{figure}
+\end{frame}
+\begin{frame}
+Given a=8cm, c-b=k (k=3.5cm)
+Apply cosine rule 
+\begin{align*}
+	\cos{(B)} = \frac{a^2+c^2-b^2}{2ac}\\
+	\cos{(B)}= \frac{a^2+(b+k)^2-b^2}{2a(b+k)}\\
+	2ab\cos{B}+2ak\cos{B}=a^2+k+2bk\\
+	b=\frac{a^2 + k^2-2ak \cos{B} }{2a\cos{B}-2k}
+\end{align*}
+\begin{center}
+b=8.49, c=11.99
+\end{center}
+\begin{itemize}
+\item tikz code for above figure: \url{https://github.com/d-DP/Assignments/blob/master/figs/2.tex}
+\item Python code for Figure 0-2:\url{https://github.com/d-DP/Assignments/blob/master/codes/2.py}\\
+\end{itemize}
+\end{frame}
